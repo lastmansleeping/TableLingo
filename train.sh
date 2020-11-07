@@ -1,3 +1,4 @@
+#!/bin/bash
 # BART
 python pipeline/train.py \
 --data_dir ../data/dart/data/v1.1.1/ \
