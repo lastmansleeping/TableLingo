@@ -1,0 +1,54 @@
+INFO: 2020-11-07 04:30:27.277 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 2,
+    "run_id": "bart_v2",
+    "models_dir": "models/",
+    "model": "BART",
+    "batch_size": 8,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0,
+    "max_permutations": 3
+}
+INFO: 2020-11-07 04:30:31.590 
+Loading model...Done
+INFO: 2020-11-07 04:30:31.590 
+Using linearization strategy: 2
+INFO: 2020-11-07 04:30:31.590 
+Max permutations per train tripleset : 3
+INFO: 2020-11-07 04:30:32.678 
+
+
+Samples:
+
+INFO: 2020-11-07 04:30:32.682 
+----------------- train -----------------
+Source : <CHILD> HEAD Aromi <CHILDREN> <CHILD> eatType coffee shop <CHILDREN> </CHILDREN> </CHILD> <CHILD> food Fast food <CHILDREN> </CHILDREN> </CHILD> <CHILD> customer rating 1 out of 5 <CHILDREN> </CHILDREN> </CHILD> <CHILD> area riverside <CHILDREN> </CHILDREN> </CHILD> <CHILD> familyFriendly yes <CHILDREN> </CHILDREN> </CHILD> </CHILDREN> </CHILD>
+Target : Aromi is a coffee shop located in the riverside of Cambridge. It provides fast food and is children friendly, customers rate it 1 out of 5.
+
+INFO: 2020-11-07 04:30:32.682 
+----------------- dev -----------------
+Source : <CHILD> HEAD Georgia 6 <CHILDREN> <CHILD> INCUMBENT Carl Vinson <CHILDREN> </CHILDREN> </CHILD> </CHILDREN> </CHILD>
+Target : The incumbent Carl Vinson is in georgia.
+
+INFO: 2020-11-07 04:30:32.683 
+----------------- test -----------------
+Source : <CHILD> HEAD Aaron Hunt <CHILDREN> <CHILD> CLUB SV Werder Bremen <CHILDREN> </CHILDREN> </CHILD> <CHILD> CLUB SV Werder Bremen II <CHILDREN> <CHILD> MANAGER Alexander Nouri <CHILDREN> </CHILDREN> </CHILD> <CHILD> LEAGUE 3. Liga <CHILDREN> </CHILDREN> </CHILD> </CHILDREN> </CHILD> </CHILDREN> </CHILD>
+Target : SV Werder Bremen is managed by Alexander Nouri and SV Werder Bremen II are players in 3 Liga. Aaron Hunt plays for both clubs.
+
+INFO: 2020-11-07 04:31:01.453 
+Preparing dataset...Done
+INFO: 2020-11-07 04:31:01.453 
+Training model...
+
+
+

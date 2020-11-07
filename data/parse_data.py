@@ -1,8 +1,8 @@
 import glob
 import os
 import json
-from itertools import permutations
 import numpy as np
+from anytree import Node, RenderTree, LoopError
 
 
 class DARTDataParser:
@@ -46,22 +46,61 @@ class DARTDataParser:
 
     def linearize_triples(self, triples, is_train=True):
         linearized_triples_list = set()
-        if self.max_permutations > 0 and is_train:
-            # Permutations
-            for i in range(self.max_permutations):
-                permutation = np.random.permutation(triples)
-                linearized_triples_list.add(" ".join(
-                    [self.linearize_triple(triple) for triple in permutation]))
-        else:
+        if self.linearize_strategy == 0:
             # No permutation
             linearized_triples_list.add(" ".join(
-                [self.linearize_triple(triple) for triple in triples]))
+                ["<TRIPLE> {} </TRIPLE>".format(
+                    " ".join(triple)) for triple in triples]))
+        elif self.linearize_strategy == 1:
+            # Permutations
+            if self.max_permutations > 0 and is_train:
+                for i in range(self.max_permutations):
+                    permutation = np.random.permutation(triples)
+                    linearized_triples_list.add(" ".join(
+                        ["<TRIPLE> {} </TRIPLE>".format(
+                            " ".join(triple)) for triple in permutation]))
+        elif self.linearize_strategy == 2:
+            linearized_triples_list.add(
+                self.linearize_tree(self.generate_tree(triples)).strip())
 
         return list(linearized_triples_list)
 
-    def linearize_triple(self, triple):
-        if self.linearize_strategy in {0, 1}:
-            return "<TRIPLE> {} </TRIPLE>".format(" ".join(triple))
+    def generate_tree(self, triples):
+        s_nodes = {}
+        o_nodes = {}
+        for triple in triples:
+            S, P, O = triple
+            s_nodes[S] = Node(S, parent=None, predicate=None)
+            o_nodes[(P, O)] = Node(O, parent=None, predicate=None)
+        for triple in triples:
+            S, P, O = triple
+            if O in s_nodes:
+                try:
+                    s_nodes[O].parent = s_nodes[S]
+                    s_nodes[O].predicate = P
+                except LoopError:
+                    o_nodes[(P, O)].parent = s_nodes[S]
+                    o_nodes[(P, O)].predicate = P
+            else:
+                o_nodes[(P, O)].parent = s_nodes[S]
+                o_nodes[(P, O)].predicate = P
+
+        roots = [n for n in s_nodes.values() if n.is_root]
+        return roots
+
+    def linearize_tree(self, roots):
+        tree_str = ""
+        if not roots:
+            return ""
+        for root in roots:
+            predicate = root.predicate
+            if not root.predicate:
+                predicate = "HEAD"
+
+            tree_str += " <CHILD> {} {} <CHILDREN>{} </CHILDREN> </CHILD>".format(
+                predicate, root.name, self.linearize_tree(root.children))
+
+        return tree_str
 
 
 def get_data_parser(dataset_key, linearize_strategy, max_permutations, logger):

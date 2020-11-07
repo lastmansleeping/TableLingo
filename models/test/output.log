@@ -1,0 +1,54 @@
+INFO: 2020-11-07 04:26:00.976 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 0,
+    "run_id": "test",
+    "models_dir": "models/",
+    "model": "BART",
+    "batch_size": 16,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0,
+    "max_permutations": -1
+}
+INFO: 2020-11-07 04:26:04.922 
+Loading model...Done
+INFO: 2020-11-07 04:26:04.922 
+Using linearization strategy: 0
+INFO: 2020-11-07 04:26:04.930 
+Max permutations per train tripleset : -1
+INFO: 2020-11-07 04:26:05.290 
+
+
+Samples:
+
+INFO: 2020-11-07 04:26:05.294 
+----------------- train -----------------
+Source : <TRIPLE> Elliot See DEATH_PLACE St. Louis </TRIPLE> <TRIPLE> Elliot See DATE_OF_DEATH "1966-02-28" </TRIPLE>
+Target : Elliot See died in St Louis on 28/02/1966.
+
+INFO: 2020-11-07 04:26:05.295 
+----------------- dev -----------------
+Source : <TRIPLE> The Eagle eatType coffee shop </TRIPLE> <TRIPLE> The Eagle food English </TRIPLE> <TRIPLE> The Eagle priceRange less than £20 </TRIPLE> <TRIPLE> The Eagle customer rating low </TRIPLE> <TRIPLE> The Eagle area riverside </TRIPLE> <TRIPLE> The Eagle familyFriendly yes </TRIPLE> <TRIPLE> The Eagle near Burger King </TRIPLE>
+Target : The Eagle is located in the riverside area near Burger King. The Eagle is an English, family friendly coffee shop with low customer rating. Their prices are less than £20.
+
+INFO: 2020-11-07 04:26:05.296 
+----------------- test -----------------
+Source : <TRIPLE> Green Man eatType coffee shop </TRIPLE> <TRIPLE> Green Man customer rating 3 out of 5 </TRIPLE> <TRIPLE> Green Man near All Bar One </TRIPLE>
+Target : Located close to All Bar One, Green Man coffee shop has a 3 out of 5 rating.
+
+INFO: 2020-11-07 04:26:28.207 
+Preparing dataset...Done
+INFO: 2020-11-07 04:26:28.207 
+Training model...
+
+
+

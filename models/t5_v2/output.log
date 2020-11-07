@@ -1,0 +1,54 @@
+INFO: 2020-11-07 04:27:02.509 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 2,
+    "run_id": "t5_v2",
+    "models_dir": "models/",
+    "model": "T5",
+    "batch_size": 16,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0,
+    "max_permutations": -1
+}
+INFO: 2020-11-07 04:27:05.084 
+Loading model...Done
+INFO: 2020-11-07 04:27:05.084 
+Using linearization strategy: 2
+INFO: 2020-11-07 04:27:05.091 
+Max permutations per train tripleset : -1
+INFO: 2020-11-07 04:27:06.169 
+
+
+Samples:
+
+INFO: 2020-11-07 04:27:06.173 
+----------------- train -----------------
+Source : <CHILD> HEAD case two (part 1) <CHILDREN> <CHILD> ORIGINAL_AIR_DATE 13 february 2012 <CHILDREN> </CHILDREN> </CHILD> <CHILD> VIEWING_FIGURES_(MILLIONS)_SOURCED_BY_BARB_;_INCLUDES_ITV1_HD_AND_ITV1_+1 7.12 <CHILDREN> </CHILDREN> </CHILD> </CHILDREN> </CHILD>
+Target : The original air date for the episode viewed by 7.12 million people is 13 february 2012.
+
+INFO: 2020-11-07 04:27:06.174 
+----------------- dev -----------------
+Source : <CHILD> HEAD The Eagle <CHILDREN> <CHILD> eatType coffee shop <CHILDREN> </CHILDREN> </CHILD> <CHILD> priceRange moderate <CHILDREN> </CHILDREN> </CHILD> <CHILD> customer rating 1 out of 5 <CHILDREN> </CHILDREN> </CHILD> <CHILD> area riverside <CHILDREN> </CHILDREN> </CHILD> <CHILD> near Burger King <CHILDREN> </CHILDREN> </CHILD> </CHILDREN> </CHILD>
+Target : Near Burger King by the riverside there is a coffee shop called The Eagle yes with a moderate price range and rating of 1 out of 5
+
+INFO: 2020-11-07 04:27:06.174 
+----------------- test -----------------
+Source : <CHILD> HEAD The Punter <CHILDREN> <CHILD> eatType pub <CHILDREN> </CHILDREN> </CHILD> <CHILD> food Chinese <CHILDREN> </CHILDREN> </CHILD> <CHILD> priceRange moderate <CHILDREN> </CHILDREN> </CHILD> <CHILD> familyFriendly yes <CHILDREN> </CHILDREN> </CHILD> <CHILD> near Raja Indian Cuisine <CHILDREN> </CHILDREN> </CHILD> </CHILDREN> </CHILD>
+Target : The Punter pub offers Kid Friendly Chinese cuisine at a moderate price. Located near the Raja Indian Cuisine.
+
+INFO: 2020-11-07 04:27:49.063 
+Preparing dataset...Done
+INFO: 2020-11-07 04:27:49.063 
+Training model...
+
+
+
