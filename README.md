@@ -25,9 +25,10 @@ pip install -r requirements.txt
 - [ ] Bert2GPT
 
 ### Linearization strategies
-- `<TRIPLE>...</TRIPLE> <TRIPLE>...</TRIPLE> ..... <TRIPLE>...</TRIPLE>`
-- `permutations(<TRIPLE>...</TRIPLE> <TRIPLE>...</TRIPLE> ..... <TRIPLE>...</TRIPLE>, max_permutations=k)
-- hierarchical linearization
+0. `<TRIPLE>...</TRIPLE> <TRIPLE>...</TRIPLE> ..... <TRIPLE>...</TRIPLE>`
+1. permutations of strategy 0 with permutations controlled by `max_permutations`
+2. hierarchical linearization of triple
+3. hierarchical linearization of triple with permutations
 
 ### Training and Evaluation
 ```
