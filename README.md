@@ -17,6 +17,18 @@ pip install -r requirements.txt
 - [x] [DART](https://github.com/Yale-LILY/dart)
 - [ ] [ToTTo](https://github.com/google-research-datasets/ToTTo)
 
+### Models currently supported
+- [x] BART
+- [x] T5
+- [x] Roberta2Roberta shared
+- [x] Bert2Bert shared
+- [ ] Bert2GPT
+
+### Linearization strategies
+- `<TRIPLE>...</TRIPLE> <TRIPLE>...</TRIPLE> ..... <TRIPLE>...</TRIPLE>`
+- `permutations(<TRIPLE>...</TRIPLE> <TRIPLE>...</TRIPLE> ..... <TRIPLE>...</TRIPLE>, max_permutations=k)
+- hierarchical linearization
+
 ### Training and Evaluation
 ```
 bash train.sh
