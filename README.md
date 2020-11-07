@@ -2,6 +2,11 @@
 
 A Data-to-Text Generation Library built on top of Huggingface [Transformers](https://huggingface.co/docs/transformers) and [Datasets](https://huggingface.co/docs/datasets)
 
+### Docs
+- [Paper with findings](docs/final_paper.pdf)
+- [Experiment Protocol](docs/experiment_protocol.pdf)
+- [Literature Review](docs/literature_review.pdf)
+
 ### Setup
 ```
 pip install -r requirements.txt
