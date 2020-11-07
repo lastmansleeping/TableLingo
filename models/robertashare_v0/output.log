@@ -1,0 +1,301 @@
+INFO: 2020-11-06 09:15:01.444 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 0,
+    "run_id": "robertashare_v0",
+    "models_dir": "models/",
+    "model": "RoBERTaShare",
+    "batch_size": 16,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0
+}
+INFO: 2020-11-06 09:15:06.853 
+Loading model...Done
+INFO: 2020-11-06 09:15:06.853 
+Using linearization strategy: 0
+INFO: 2020-11-06 09:15:07.199 
+
+
+Samples:
+
+INFO: 2020-11-06 09:15:07.199 
+----------------- train -----------------
+Source : <TRIPLE> First Clearing LOCATION On NYS 52 1 Mi. Youngsville </TRIPLE> <TRIPLE> On NYS 52 1 Mi. Youngsville CITY_OR_TOWN Callicoon, New York </TRIPLE>
+Target : First Clearing	based on Callicoon, New York and location at On NYS 52 1 Mi. Youngsville
+
+INFO: 2020-11-06 09:15:07.199 
+----------------- dev -----------------
+Source : <TRIPLE> Mars Hill College JOINED 1973 </TRIPLE> <TRIPLE> Mars Hill College LOCATION Mars Hill, North Carolina </TRIPLE>
+Target : A school from Mars Hill, North Carolina, joined in 1973.
+
+INFO: 2020-11-06 09:15:07.199 
+----------------- test -----------------
+Source : <TRIPLE> Hawaii Five-O NOTES Episode: The Flight of the Jewels </TRIPLE> <TRIPLE> [TABLECONTEXT] [TITLE] Jeff Daniels </TRIPLE> <TRIPLE> [TABLECONTEXT] TITLE Hawaii Five-O </TRIPLE>
+Target : Jeff Daniels played in the Hawaii Five-O episode The Flight of the Jewels
+
+INFO: 2020-11-06 09:15:29.752 
+Preparing dataset...Done
+INFO: 2020-11-06 09:15:29.752 
+Training model...
+
+
+
+INFO: 2020-11-06 10:19:30.642 
+Final model saved to -> models/robertashare_v0/final
+INFO: 2020-11-06 10:19:30.642 
+Writing predictions to -> models/robertashare_v0/pred/dev.txt
+INFO: 2020-11-06 10:20:54.799 
+Finished performing 160 data-to-text generations
+INFO: 2020-11-06 10:22:17.244 
+Finished performing 320 data-to-text generations
+INFO: 2020-11-06 10:23:39.741 
+Finished performing 480 data-to-text generations
+INFO: 2020-11-06 10:25:02.415 
+Finished performing 640 data-to-text generations
+INFO: 2020-11-06 10:26:25.108 
+Finished performing 800 data-to-text generations
+INFO: 2020-11-06 10:27:47.753 
+Finished performing 960 data-to-text generations
+INFO: 2020-11-06 10:29:10.393 
+Finished performing 1120 data-to-text generations
+INFO: 2020-11-06 10:30:33.022 
+Finished performing 1280 data-to-text generations
+INFO: 2020-11-06 10:31:55.607 
+Finished performing 1440 data-to-text generations
+INFO: 2020-11-06 10:33:18.197 
+Finished performing 1600 data-to-text generations
+INFO: 2020-11-06 10:34:40.794 
+Finished performing 1760 data-to-text generations
+INFO: 2020-11-06 10:36:03.510 
+Finished performing 1920 data-to-text generations
+INFO: 2020-11-06 10:37:26.122 
+Finished performing 2080 data-to-text generations
+INFO: 2020-11-06 10:38:48.729 
+Finished performing 2240 data-to-text generations
+INFO: 2020-11-06 10:40:11.382 
+Finished performing 2400 data-to-text generations
+INFO: 2020-11-06 10:41:34.041 
+Finished performing 2560 data-to-text generations
+INFO: 2020-11-06 10:42:56.685 
+Finished performing 2720 data-to-text generations
+INFO: 2020-11-06 10:44:19.298 
+Finished performing 2880 data-to-text generations
+INFO: 2020-11-06 10:45:41.859 
+Finished performing 3040 data-to-text generations
+INFO: 2020-11-06 10:47:04.386 
+Finished performing 3200 data-to-text generations
+INFO: 2020-11-06 10:48:26.939 
+Finished performing 3360 data-to-text generations
+INFO: 2020-11-06 10:49:49.485 
+Finished performing 3520 data-to-text generations
+INFO: 2020-11-06 10:51:12.028 
+Finished performing 3680 data-to-text generations
+INFO: 2020-11-06 10:52:34.567 
+Finished performing 3840 data-to-text generations
+INFO: 2020-11-06 10:53:57.114 
+Finished performing 4000 data-to-text generations
+INFO: 2020-11-06 10:55:19.682 
+Finished performing 4160 data-to-text generations
+INFO: 2020-11-06 10:56:42.260 
+Finished performing 4320 data-to-text generations
+INFO: 2020-11-06 10:58:04.852 
+Finished performing 4480 data-to-text generations
+INFO: 2020-11-06 10:59:27.406 
+Finished performing 4640 data-to-text generations
+INFO: 2020-11-06 11:00:49.975 
+Finished performing 4800 data-to-text generations
+INFO: 2020-11-06 11:02:12.569 
+Finished performing 4960 data-to-text generations
+INFO: 2020-11-06 11:03:35.122 
+Finished performing 5120 data-to-text generations
+INFO: 2020-11-06 11:04:57.667 
+Finished performing 5280 data-to-text generations
+INFO: 2020-11-06 11:06:20.217 
+Finished performing 5440 data-to-text generations
+INFO: 2020-11-06 11:07:42.806 
+Finished performing 5600 data-to-text generations
+INFO: 2020-11-06 11:09:05.389 
+Finished performing 5760 data-to-text generations
+INFO: 2020-11-06 11:10:28.082 
+Finished performing 5920 data-to-text generations
+INFO: 2020-11-06 11:11:50.678 
+Finished performing 6080 data-to-text generations
+INFO: 2020-11-06 11:13:13.242 
+Finished performing 6240 data-to-text generations
+INFO: 2020-11-06 11:14:35.835 
+Finished performing 6400 data-to-text generations
+INFO: 2020-11-06 11:15:58.448 
+Finished performing 6560 data-to-text generations
+INFO: 2020-11-06 11:17:21.011 
+Finished performing 6720 data-to-text generations
+INFO: 2020-11-06 11:18:43.583 
+Finished performing 6880 data-to-text generations
+INFO: 2020-11-06 11:19:35.554 
+Writing predictions to -> models/robertashare_v0/pred/test.txt
+INFO: 2020-11-06 11:20:59.180 
+Finished performing 160 data-to-text generations
+INFO: 2020-11-06 11:22:22.785 
+Finished performing 320 data-to-text generations
+INFO: 2020-11-06 11:23:46.422 
+Finished performing 480 data-to-text generations
+INFO: 2020-11-06 11:25:10.165 
+Finished performing 640 data-to-text generations
+INFO: 2020-11-06 11:26:33.861 
+Finished performing 800 data-to-text generations
+INFO: 2020-11-06 11:27:57.563 
+Finished performing 960 data-to-text generations
+INFO: 2020-11-06 11:29:21.240 
+Finished performing 1120 data-to-text generations
+INFO: 2020-11-06 11:30:44.889 
+Finished performing 1280 data-to-text generations
+INFO: 2020-11-06 11:32:08.520 
+Finished performing 1440 data-to-text generations
+INFO: 2020-11-06 11:33:32.122 
+Finished performing 1600 data-to-text generations
+INFO: 2020-11-06 11:34:55.725 
+Finished performing 1760 data-to-text generations
+INFO: 2020-11-06 11:36:19.302 
+Finished performing 1920 data-to-text generations
+INFO: 2020-11-06 11:37:42.936 
+Finished performing 2080 data-to-text generations
+INFO: 2020-11-06 11:39:06.491 
+Finished performing 2240 data-to-text generations
+INFO: 2020-11-06 11:40:30.073 
+Finished performing 2400 data-to-text generations
+INFO: 2020-11-06 11:41:53.633 
+Finished performing 2560 data-to-text generations
+INFO: 2020-11-06 11:43:17.193 
+Finished performing 2720 data-to-text generations
+INFO: 2020-11-06 11:44:40.703 
+Finished performing 2880 data-to-text generations
+INFO: 2020-11-06 11:46:04.329 
+Finished performing 3040 data-to-text generations
+INFO: 2020-11-06 11:47:28.014 
+Finished performing 3200 data-to-text generations
+INFO: 2020-11-06 11:48:51.698 
+Finished performing 3360 data-to-text generations
+INFO: 2020-11-06 11:50:15.352 
+Finished performing 3520 data-to-text generations
+INFO: 2020-11-06 11:51:38.990 
+Finished performing 3680 data-to-text generations
+INFO: 2020-11-06 11:53:02.574 
+Finished performing 3840 data-to-text generations
+INFO: 2020-11-06 11:54:26.146 
+Finished performing 4000 data-to-text generations
+INFO: 2020-11-06 11:55:49.691 
+Finished performing 4160 data-to-text generations
+INFO: 2020-11-06 11:57:13.255 
+Finished performing 4320 data-to-text generations
+INFO: 2020-11-06 11:58:36.812 
+Finished performing 4480 data-to-text generations
+INFO: 2020-11-06 12:00:00.323 
+Finished performing 4640 data-to-text generations
+INFO: 2020-11-06 12:01:23.849 
+Finished performing 4800 data-to-text generations
+INFO: 2020-11-06 12:02:47.495 
+Finished performing 4960 data-to-text generations
+INFO: 2020-11-06 12:04:11.155 
+Finished performing 5120 data-to-text generations
+INFO: 2020-11-06 12:05:34.756 
+Finished performing 5280 data-to-text generations
+INFO: 2020-11-06 12:06:58.371 
+Finished performing 5440 data-to-text generations
+INFO: 2020-11-06 12:08:22.173 
+Finished performing 5600 data-to-text generations
+INFO: 2020-11-06 12:09:45.982 
+Finished performing 5760 data-to-text generations
+INFO: 2020-11-06 12:11:09.781 
+Finished performing 5920 data-to-text generations
+INFO: 2020-11-06 12:12:33.550 
+Finished performing 6080 data-to-text generations
+INFO: 2020-11-06 12:13:57.341 
+Finished performing 6240 data-to-text generations
+INFO: 2020-11-06 12:15:21.095 
+Finished performing 6400 data-to-text generations
+INFO: 2020-11-06 12:16:45.019 
+Finished performing 6560 data-to-text generations
+INFO: 2020-11-06 12:18:08.915 
+Finished performing 6720 data-to-text generations
+INFO: 2020-11-06 12:19:32.807 
+Finished performing 6880 data-to-text generations
+INFO: 2020-11-06 12:20:56.714 
+Finished performing 7040 data-to-text generations
+INFO: 2020-11-06 12:22:20.578 
+Finished performing 7200 data-to-text generations
+INFO: 2020-11-06 12:23:44.411 
+Finished performing 7360 data-to-text generations
+INFO: 2020-11-06 12:25:08.260 
+Finished performing 7520 data-to-text generations
+INFO: 2020-11-06 12:26:32.150 
+Finished performing 7680 data-to-text generations
+INFO: 2020-11-06 12:27:56.013 
+Finished performing 7840 data-to-text generations
+INFO: 2020-11-06 12:29:19.828 
+Finished performing 8000 data-to-text generations
+INFO: 2020-11-06 12:30:43.634 
+Finished performing 8160 data-to-text generations
+INFO: 2020-11-06 12:32:07.635 
+Finished performing 8320 data-to-text generations
+INFO: 2020-11-06 12:33:31.363 
+Finished performing 8480 data-to-text generations
+INFO: 2020-11-06 12:34:55.066 
+Finished performing 8640 data-to-text generations
+INFO: 2020-11-06 12:36:18.788 
+Finished performing 8800 data-to-text generations
+INFO: 2020-11-06 12:37:42.486 
+Finished performing 8960 data-to-text generations
+INFO: 2020-11-06 12:39:06.161 
+Finished performing 9120 data-to-text generations
+INFO: 2020-11-06 12:40:29.847 
+Finished performing 9280 data-to-text generations
+INFO: 2020-11-06 12:41:53.571 
+Finished performing 9440 data-to-text generations
+INFO: 2020-11-06 12:43:17.257 
+Finished performing 9600 data-to-text generations
+INFO: 2020-11-06 12:44:40.975 
+Finished performing 9760 data-to-text generations
+INFO: 2020-11-06 12:46:04.655 
+Finished performing 9920 data-to-text generations
+INFO: 2020-11-06 12:47:28.334 
+Finished performing 10080 data-to-text generations
+INFO: 2020-11-06 12:48:52.028 
+Finished performing 10240 data-to-text generations
+INFO: 2020-11-06 12:50:15.742 
+Finished performing 10400 data-to-text generations
+INFO: 2020-11-06 12:51:39.258 
+Finished performing 10560 data-to-text generations
+INFO: 2020-11-06 12:53:02.724 
+Finished performing 10720 data-to-text generations
+INFO: 2020-11-06 12:54:26.200 
+Finished performing 10880 data-to-text generations
+INFO: 2020-11-06 12:55:49.661 
+Finished performing 11040 data-to-text generations
+INFO: 2020-11-06 12:57:13.147 
+Finished performing 11200 data-to-text generations
+INFO: 2020-11-06 12:58:36.618 
+Finished performing 11360 data-to-text generations
+INFO: 2020-11-06 13:00:00.115 
+Finished performing 11520 data-to-text generations
+INFO: 2020-11-06 13:01:23.714 
+Finished performing 11680 data-to-text generations
+INFO: 2020-11-06 13:02:47.378 
+Finished performing 11840 data-to-text generations
+INFO: 2020-11-06 13:04:11.047 
+Finished performing 12000 data-to-text generations
+INFO: 2020-11-06 13:05:34.542 
+Finished performing 12160 data-to-text generations
+INFO: 2020-11-06 13:06:58.022 
+Finished performing 12320 data-to-text generations
+INFO: 2020-11-06 13:08:21.591 
+Finished performing 12480 data-to-text generations
+INFO: 2020-11-06 13:08:59.447 
+The Data-to-Text Model for training and generation took -> 233.96675916512808 minutes

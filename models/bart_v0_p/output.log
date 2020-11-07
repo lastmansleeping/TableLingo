@@ -1,0 +1,54 @@
+INFO: 2020-11-06 16:52:14.895 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 0,
+    "run_id": "bart_v0_p",
+    "models_dir": "models/",
+    "model": "BART",
+    "batch_size": 16,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0,
+    "max_permutations": 3
+}
+INFO: 2020-11-06 16:52:19.178 
+Loading model...Done
+INFO: 2020-11-06 16:52:19.178 
+Using linearization strategy: 0
+INFO: 2020-11-06 16:52:19.179 
+Max permutations per train tripleset : 3
+INFO: 2020-11-06 16:52:21.063 
+
+
+Samples:
+
+INFO: 2020-11-06 16:52:21.073 
+----------------- train -----------------
+Source : <TRIPLE> Elliot See DATE_OF_BIRTH "1927-07-23" </TRIPLE> <TRIPLE> Elliot See DEATH_PLACE St. Louis </TRIPLE> <TRIPLE> Elliot See OCCUPATION Test pilot </TRIPLE>
+Target : Elliot See was a test pilot who was born on July 23rd, 1927 and died in St. Louis.
+
+INFO: 2020-11-06 16:52:21.073 
+----------------- dev -----------------
+Source : <TRIPLE> Adisham Hall COUNTRY Sri Lanka </TRIPLE> <TRIPLE> Adisham Hall LOCATION "Haputale, Sri Lanka" </TRIPLE> <TRIPLE> Sri Lanka CAPITAL Sri Jayawardenepura Kotte </TRIPLE> <TRIPLE> Sri Lanka LANGUAGE Tamil language </TRIPLE>
+Target : Adisham Hall is located in Haputale, Sri Lanka which has the capital city of Sri Jayawardenepura Kotte . Tamil is the language of the country.
+
+INFO: 2020-11-06 16:52:21.074 
+----------------- test -----------------
+Source : <TRIPLE> Aaron Turner ASSOCIATED_BAND_ASSOCIATED_MUSICAL_ARTIST Old Man Gloom </TRIPLE> <TRIPLE> Aaron Turner ASSOCIATED_BAND_ASSOCIATED_MUSICAL_ARTIST Lotus Eaters (band) </TRIPLE> <TRIPLE> Aaron Turner GENRE Black metal </TRIPLE> <TRIPLE> Aaron Turner ORIGIN United States </TRIPLE> <TRIPLE> Aaron Turner ACTIVE_YEARS_START_YEAR 1995 </TRIPLE>
+Target : Aaron Turner, whose origin is the United States, started performing in 1995. Aaron Turner; performs black metal music, played for Old Man Gloom and is a musician in the Lotus Eaters band.
+
+INFO: 2020-11-06 16:53:10.464 
+Preparing dataset...Done
+INFO: 2020-11-06 16:53:10.464 
+Training model...
+
+
+
