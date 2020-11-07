@@ -1,0 +1,54 @@
+INFO: 2020-11-06 20:03:11.484 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 0,
+    "run_id": "t5_v1",
+    "models_dir": "models/",
+    "model": "T5",
+    "batch_size": 16,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0,
+    "max_permutations": 3
+}
+INFO: 2020-11-06 20:03:13.972 
+Loading model...Done
+INFO: 2020-11-06 20:03:13.973 
+Using linearization strategy: 0
+INFO: 2020-11-06 20:03:13.973 
+Max permutations per train tripleset : 3
+INFO: 2020-11-06 20:03:15.824 
+
+
+Samples:
+
+INFO: 2020-11-06 20:03:15.833 
+----------------- train -----------------
+Source : <TRIPLE> The Twenty Two priceRange moderate </TRIPLE> <TRIPLE> The Twenty Two area riverside </TRIPLE> <TRIPLE> The Twenty Two customer rating 3 out of 5 </TRIPLE> <TRIPLE> The Twenty Two familyFriendly no </TRIPLE> <TRIPLE> The Twenty Two near The Rice Boat </TRIPLE>
+Target : The Twenty Two is above average in price but below average in customer ratings. The non-child friendly Twenty Two can be found near The Rice Boat in the riverside area.
+
+INFO: 2020-11-06 20:03:15.834 
+----------------- dev -----------------
+Source : <TRIPLE> The Wrestlers customer rating low </TRIPLE> <TRIPLE> The Wrestlers area city centre </TRIPLE> <TRIPLE> The Wrestlers familyFriendly no </TRIPLE> <TRIPLE> The Wrestlers near The Sorrento </TRIPLE>
+Target : The Wrestlers is a poorly rated, not family friendly venue near The Sorrento in the centre of town.
+
+INFO: 2020-11-06 20:03:15.835 
+----------------- test -----------------
+Source : <TRIPLE> Blue Spice eatType restaurant </TRIPLE> <TRIPLE> Blue Spice food Chinese </TRIPLE> <TRIPLE> Blue Spice area riverside </TRIPLE> <TRIPLE> Blue Spice familyFriendly yes </TRIPLE> <TRIPLE> Blue Spice near Rainbow Vegetarian Café </TRIPLE>
+Target : Blue Spice is a Chinese restaurant located in the riverside. It is family friendly is is near the Rainbow Vegetarian Café.
+
+INFO: 2020-11-06 20:04:36.941 
+Preparing dataset...Done
+INFO: 2020-11-06 20:04:36.941 
+Training model...
+
+
+

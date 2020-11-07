@@ -1,0 +1,304 @@
+INFO: 2020-11-06 16:52:14.895 
+Arguments: 
+{
+    "data_dir": "../data/dart/data/v1.1.1/",
+    "dataset": "DART",
+    "linearize": true,
+    "linearize_strategy": 0,
+    "run_id": "bart_v0_p",
+    "models_dir": "models/",
+    "model": "BART",
+    "batch_size": 16,
+    "use_mixed_precision": true,
+    "disable_gpu": false,
+    "seed": 123,
+    "num_epochs": 5,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "overwrite": true,
+    "max_grad_norm": 1.0,
+    "max_permutations": 3
+}
+INFO: 2020-11-06 16:52:19.178 
+Loading model...Done
+INFO: 2020-11-06 16:52:19.178 
+Using linearization strategy: 0
+INFO: 2020-11-06 16:52:19.179 
+Max permutations per train tripleset : 3
+INFO: 2020-11-06 16:52:21.063 
+
+
+Samples:
+
+INFO: 2020-11-06 16:52:21.073 
+----------------- train -----------------
+Source : <TRIPLE> Elliot See DATE_OF_BIRTH "1927-07-23" </TRIPLE> <TRIPLE> Elliot See DEATH_PLACE St. Louis </TRIPLE> <TRIPLE> Elliot See OCCUPATION Test pilot </TRIPLE>
+Target : Elliot See was a test pilot who was born on July 23rd, 1927 and died in St. Louis.
+
+INFO: 2020-11-06 16:52:21.073 
+----------------- dev -----------------
+Source : <TRIPLE> Adisham Hall COUNTRY Sri Lanka </TRIPLE> <TRIPLE> Adisham Hall LOCATION "Haputale, Sri Lanka" </TRIPLE> <TRIPLE> Sri Lanka CAPITAL Sri Jayawardenepura Kotte </TRIPLE> <TRIPLE> Sri Lanka LANGUAGE Tamil language </TRIPLE>
+Target : Adisham Hall is located in Haputale, Sri Lanka which has the capital city of Sri Jayawardenepura Kotte . Tamil is the language of the country.
+
+INFO: 2020-11-06 16:52:21.074 
+----------------- test -----------------
+Source : <TRIPLE> Aaron Turner ASSOCIATED_BAND_ASSOCIATED_MUSICAL_ARTIST Old Man Gloom </TRIPLE> <TRIPLE> Aaron Turner ASSOCIATED_BAND_ASSOCIATED_MUSICAL_ARTIST Lotus Eaters (band) </TRIPLE> <TRIPLE> Aaron Turner GENRE Black metal </TRIPLE> <TRIPLE> Aaron Turner ORIGIN United States </TRIPLE> <TRIPLE> Aaron Turner ACTIVE_YEARS_START_YEAR 1995 </TRIPLE>
+Target : Aaron Turner, whose origin is the United States, started performing in 1995. Aaron Turner; performs black metal music, played for Old Man Gloom and is a musician in the Lotus Eaters band.
+
+INFO: 2020-11-06 16:53:10.464 
+Preparing dataset...Done
+INFO: 2020-11-06 16:53:10.464 
+Training model...
+
+
+
+INFO: 2020-11-06 19:37:34.799 
+Final model saved to -> models/bart_v0_p/final
+INFO: 2020-11-06 19:37:34.799 
+Writing predictions to -> models/bart_v0_p/pred/dev.txt
+INFO: 2020-11-06 19:37:45.994 
+Finished performing 160 data-to-text generations
+INFO: 2020-11-06 19:37:55.692 
+Finished performing 320 data-to-text generations
+INFO: 2020-11-06 19:38:06.334 
+Finished performing 480 data-to-text generations
+INFO: 2020-11-06 19:38:14.326 
+Finished performing 640 data-to-text generations
+INFO: 2020-11-06 19:38:23.877 
+Finished performing 800 data-to-text generations
+INFO: 2020-11-06 19:38:39.585 
+Finished performing 960 data-to-text generations
+INFO: 2020-11-06 19:38:58.023 
+Finished performing 1120 data-to-text generations
+INFO: 2020-11-06 19:39:14.962 
+Finished performing 1280 data-to-text generations
+INFO: 2020-11-06 19:39:25.434 
+Finished performing 1440 data-to-text generations
+INFO: 2020-11-06 19:39:42.532 
+Finished performing 1600 data-to-text generations
+INFO: 2020-11-06 19:39:55.070 
+Finished performing 1760 data-to-text generations
+INFO: 2020-11-06 19:40:04.723 
+Finished performing 1920 data-to-text generations
+INFO: 2020-11-06 19:40:17.428 
+Finished performing 2080 data-to-text generations
+INFO: 2020-11-06 19:40:36.655 
+Finished performing 2240 data-to-text generations
+INFO: 2020-11-06 19:40:51.911 
+Finished performing 2400 data-to-text generations
+INFO: 2020-11-06 19:41:03.176 
+Finished performing 2560 data-to-text generations
+INFO: 2020-11-06 19:41:13.225 
+Finished performing 2720 data-to-text generations
+INFO: 2020-11-06 19:41:22.882 
+Finished performing 2880 data-to-text generations
+INFO: 2020-11-06 19:41:32.221 
+Finished performing 3040 data-to-text generations
+INFO: 2020-11-06 19:41:42.026 
+Finished performing 3200 data-to-text generations
+INFO: 2020-11-06 19:41:50.648 
+Finished performing 3360 data-to-text generations
+INFO: 2020-11-06 19:41:58.497 
+Finished performing 3520 data-to-text generations
+INFO: 2020-11-06 19:42:07.543 
+Finished performing 3680 data-to-text generations
+INFO: 2020-11-06 19:42:16.349 
+Finished performing 3840 data-to-text generations
+INFO: 2020-11-06 19:42:25.450 
+Finished performing 4000 data-to-text generations
+INFO: 2020-11-06 19:42:35.032 
+Finished performing 4160 data-to-text generations
+INFO: 2020-11-06 19:42:44.662 
+Finished performing 4320 data-to-text generations
+INFO: 2020-11-06 19:42:52.488 
+Finished performing 4480 data-to-text generations
+INFO: 2020-11-06 19:43:02.401 
+Finished performing 4640 data-to-text generations
+INFO: 2020-11-06 19:43:10.456 
+Finished performing 4800 data-to-text generations
+INFO: 2020-11-06 19:43:19.253 
+Finished performing 4960 data-to-text generations
+INFO: 2020-11-06 19:43:29.320 
+Finished performing 5120 data-to-text generations
+INFO: 2020-11-06 19:43:39.721 
+Finished performing 5280 data-to-text generations
+INFO: 2020-11-06 19:43:49.745 
+Finished performing 5440 data-to-text generations
+INFO: 2020-11-06 19:43:59.022 
+Finished performing 5600 data-to-text generations
+INFO: 2020-11-06 19:44:07.230 
+Finished performing 5760 data-to-text generations
+INFO: 2020-11-06 19:44:14.131 
+Finished performing 5920 data-to-text generations
+INFO: 2020-11-06 19:44:22.472 
+Finished performing 6080 data-to-text generations
+INFO: 2020-11-06 19:44:31.581 
+Finished performing 6240 data-to-text generations
+INFO: 2020-11-06 19:44:40.722 
+Finished performing 6400 data-to-text generations
+INFO: 2020-11-06 19:44:48.223 
+Finished performing 6560 data-to-text generations
+INFO: 2020-11-06 19:44:57.359 
+Finished performing 6720 data-to-text generations
+INFO: 2020-11-06 19:45:05.197 
+Finished performing 6880 data-to-text generations
+INFO: 2020-11-06 19:45:10.582 
+Writing predictions to -> models/bart_v0_p/pred/test.txt
+INFO: 2020-11-06 19:45:18.285 
+Finished performing 160 data-to-text generations
+INFO: 2020-11-06 19:45:27.183 
+Finished performing 320 data-to-text generations
+INFO: 2020-11-06 19:45:35.134 
+Finished performing 480 data-to-text generations
+INFO: 2020-11-06 19:45:40.917 
+Finished performing 640 data-to-text generations
+INFO: 2020-11-06 19:45:46.620 
+Finished performing 800 data-to-text generations
+INFO: 2020-11-06 19:45:52.415 
+Finished performing 960 data-to-text generations
+INFO: 2020-11-06 19:45:59.105 
+Finished performing 1120 data-to-text generations
+INFO: 2020-11-06 19:46:06.522 
+Finished performing 1280 data-to-text generations
+INFO: 2020-11-06 19:46:13.728 
+Finished performing 1440 data-to-text generations
+INFO: 2020-11-06 19:46:23.013 
+Finished performing 1600 data-to-text generations
+INFO: 2020-11-06 19:46:32.135 
+Finished performing 1760 data-to-text generations
+INFO: 2020-11-06 19:46:40.493 
+Finished performing 1920 data-to-text generations
+INFO: 2020-11-06 19:46:49.959 
+Finished performing 2080 data-to-text generations
+INFO: 2020-11-06 19:47:01.701 
+Finished performing 2240 data-to-text generations
+INFO: 2020-11-06 19:47:12.508 
+Finished performing 2400 data-to-text generations
+INFO: 2020-11-06 19:47:22.782 
+Finished performing 2560 data-to-text generations
+INFO: 2020-11-06 19:47:35.986 
+Finished performing 2720 data-to-text generations
+INFO: 2020-11-06 19:47:47.858 
+Finished performing 2880 data-to-text generations
+INFO: 2020-11-06 19:47:55.780 
+Finished performing 3040 data-to-text generations
+INFO: 2020-11-06 19:48:02.241 
+Finished performing 3200 data-to-text generations
+INFO: 2020-11-06 19:48:07.704 
+Finished performing 3360 data-to-text generations
+INFO: 2020-11-06 19:48:13.791 
+Finished performing 3520 data-to-text generations
+INFO: 2020-11-06 19:48:21.790 
+Finished performing 3680 data-to-text generations
+INFO: 2020-11-06 19:48:29.284 
+Finished performing 3840 data-to-text generations
+INFO: 2020-11-06 19:48:37.308 
+Finished performing 4000 data-to-text generations
+INFO: 2020-11-06 19:48:47.618 
+Finished performing 4160 data-to-text generations
+INFO: 2020-11-06 19:48:56.194 
+Finished performing 4320 data-to-text generations
+INFO: 2020-11-06 19:49:04.463 
+Finished performing 4480 data-to-text generations
+INFO: 2020-11-06 19:49:16.052 
+Finished performing 4640 data-to-text generations
+INFO: 2020-11-06 19:49:28.298 
+Finished performing 4800 data-to-text generations
+INFO: 2020-11-06 19:49:41.391 
+Finished performing 4960 data-to-text generations
+INFO: 2020-11-06 19:49:53.974 
+Finished performing 5120 data-to-text generations
+INFO: 2020-11-06 19:50:07.033 
+Finished performing 5280 data-to-text generations
+INFO: 2020-11-06 19:50:21.826 
+Finished performing 5440 data-to-text generations
+INFO: 2020-11-06 19:50:27.797 
+Finished performing 5600 data-to-text generations
+INFO: 2020-11-06 19:50:33.317 
+Finished performing 5760 data-to-text generations
+INFO: 2020-11-06 19:50:39.118 
+Finished performing 5920 data-to-text generations
+INFO: 2020-11-06 19:50:46.791 
+Finished performing 6080 data-to-text generations
+INFO: 2020-11-06 19:50:54.004 
+Finished performing 6240 data-to-text generations
+INFO: 2020-11-06 19:51:01.488 
+Finished performing 6400 data-to-text generations
+INFO: 2020-11-06 19:51:10.310 
+Finished performing 6560 data-to-text generations
+INFO: 2020-11-06 19:51:19.187 
+Finished performing 6720 data-to-text generations
+INFO: 2020-11-06 19:51:28.644 
+Finished performing 6880 data-to-text generations
+INFO: 2020-11-06 19:51:38.370 
+Finished performing 7040 data-to-text generations
+INFO: 2020-11-06 19:51:49.095 
+Finished performing 7200 data-to-text generations
+INFO: 2020-11-06 19:51:59.575 
+Finished performing 7360 data-to-text generations
+INFO: 2020-11-06 19:52:10.346 
+Finished performing 7520 data-to-text generations
+INFO: 2020-11-06 19:52:23.711 
+Finished performing 7680 data-to-text generations
+INFO: 2020-11-06 19:52:35.411 
+Finished performing 7840 data-to-text generations
+INFO: 2020-11-06 19:52:44.063 
+Finished performing 8000 data-to-text generations
+INFO: 2020-11-06 19:52:52.560 
+Finished performing 8160 data-to-text generations
+INFO: 2020-11-06 19:53:00.794 
+Finished performing 8320 data-to-text generations
+INFO: 2020-11-06 19:53:08.335 
+Finished performing 8480 data-to-text generations
+INFO: 2020-11-06 19:53:16.536 
+Finished performing 8640 data-to-text generations
+INFO: 2020-11-06 19:53:24.380 
+Finished performing 8800 data-to-text generations
+INFO: 2020-11-06 19:53:32.295 
+Finished performing 8960 data-to-text generations
+INFO: 2020-11-06 19:53:40.591 
+Finished performing 9120 data-to-text generations
+INFO: 2020-11-06 19:53:50.801 
+Finished performing 9280 data-to-text generations
+INFO: 2020-11-06 19:54:00.043 
+Finished performing 9440 data-to-text generations
+INFO: 2020-11-06 19:54:09.051 
+Finished performing 9600 data-to-text generations
+INFO: 2020-11-06 19:54:18.557 
+Finished performing 9760 data-to-text generations
+INFO: 2020-11-06 19:54:27.382 
+Finished performing 9920 data-to-text generations
+INFO: 2020-11-06 19:54:35.944 
+Finished performing 10080 data-to-text generations
+INFO: 2020-11-06 19:54:46.194 
+Finished performing 10240 data-to-text generations
+INFO: 2020-11-06 19:54:54.961 
+Finished performing 10400 data-to-text generations
+INFO: 2020-11-06 19:55:04.008 
+Finished performing 10560 data-to-text generations
+INFO: 2020-11-06 19:55:12.707 
+Finished performing 10720 data-to-text generations
+INFO: 2020-11-06 19:55:22.842 
+Finished performing 10880 data-to-text generations
+INFO: 2020-11-06 19:55:32.617 
+Finished performing 11040 data-to-text generations
+INFO: 2020-11-06 19:55:41.510 
+Finished performing 11200 data-to-text generations
+INFO: 2020-11-06 19:55:51.398 
+Finished performing 11360 data-to-text generations
+INFO: 2020-11-06 19:56:00.642 
+Finished performing 11520 data-to-text generations
+INFO: 2020-11-06 19:56:09.305 
+Finished performing 11680 data-to-text generations
+INFO: 2020-11-06 19:56:17.789 
+Finished performing 11840 data-to-text generations
+INFO: 2020-11-06 19:56:26.729 
+Finished performing 12000 data-to-text generations
+INFO: 2020-11-06 19:56:35.607 
+Finished performing 12160 data-to-text generations
+INFO: 2020-11-06 19:56:44.224 
+Finished performing 12320 data-to-text generations
+INFO: 2020-11-06 19:56:53.367 
+Finished performing 12480 data-to-text generations
+INFO: 2020-11-06 19:56:58.001 
+The Data-to-Text Model for training and generation took -> 184.71848558187486 minutes
