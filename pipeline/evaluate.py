@@ -14,7 +14,7 @@ def evaluate(pred_labels, true_labels):
     print("BLEU : {}".format(
         bleu.compute(predictions=pred_labels, references=[[l] for l in true_labels])["score"]))
     print("METEOR : {}".format(
-        meteor.compute(predictions=pred_labels, references=true_labels)))
+        meteor.compute(predictions=pred_labels, references=true_labels)["meteor"]))
     print("BLEURT : {}".format(
         np.mean(bleurt.compute(predictions=pred_labels, references=true_labels)["scores"])))
     print("BERTScore : {}".format(

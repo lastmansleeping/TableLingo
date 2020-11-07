@@ -52,3 +52,253 @@ Training model...
 
 
 
+INFO: 2020-11-06 21:59:03.729 
+Final model saved to -> models/t5_v1/final
+INFO: 2020-11-06 21:59:03.729 
+Writing predictions to -> models/t5_v1/pred/dev.txt
+INFO: 2020-11-06 21:59:10.898 
+Finished performing 160 data-to-text generations
+INFO: 2020-11-06 21:59:17.493 
+Finished performing 320 data-to-text generations
+INFO: 2020-11-06 21:59:25.595 
+Finished performing 480 data-to-text generations
+INFO: 2020-11-06 21:59:31.833 
+Finished performing 640 data-to-text generations
+INFO: 2020-11-06 21:59:37.513 
+Finished performing 800 data-to-text generations
+INFO: 2020-11-06 21:59:44.162 
+Finished performing 960 data-to-text generations
+INFO: 2020-11-06 21:59:53.504 
+Finished performing 1120 data-to-text generations
+INFO: 2020-11-06 22:00:03.938 
+Finished performing 1280 data-to-text generations
+INFO: 2020-11-06 22:00:14.035 
+Finished performing 1440 data-to-text generations
+INFO: 2020-11-06 22:00:26.866 
+Finished performing 1600 data-to-text generations
+INFO: 2020-11-06 22:00:39.483 
+Finished performing 1760 data-to-text generations
+INFO: 2020-11-06 22:00:48.070 
+Finished performing 1920 data-to-text generations
+INFO: 2020-11-06 22:00:58.949 
+Finished performing 2080 data-to-text generations
+INFO: 2020-11-06 22:01:07.605 
+Finished performing 2240 data-to-text generations
+INFO: 2020-11-06 22:01:15.564 
+Finished performing 2400 data-to-text generations
+INFO: 2020-11-06 22:01:23.672 
+Finished performing 2560 data-to-text generations
+INFO: 2020-11-06 22:01:32.264 
+Finished performing 2720 data-to-text generations
+INFO: 2020-11-06 22:01:38.093 
+Finished performing 2880 data-to-text generations
+INFO: 2020-11-06 22:01:45.010 
+Finished performing 3040 data-to-text generations
+INFO: 2020-11-06 22:01:53.530 
+Finished performing 3200 data-to-text generations
+INFO: 2020-11-06 22:02:00.870 
+Finished performing 3360 data-to-text generations
+INFO: 2020-11-06 22:02:07.448 
+Finished performing 3520 data-to-text generations
+INFO: 2020-11-06 22:02:14.880 
+Finished performing 3680 data-to-text generations
+INFO: 2020-11-06 22:02:23.268 
+Finished performing 3840 data-to-text generations
+INFO: 2020-11-06 22:02:31.353 
+Finished performing 4000 data-to-text generations
+INFO: 2020-11-06 22:02:39.733 
+Finished performing 4160 data-to-text generations
+INFO: 2020-11-06 22:02:47.798 
+Finished performing 4320 data-to-text generations
+INFO: 2020-11-06 22:02:54.248 
+Finished performing 4480 data-to-text generations
+INFO: 2020-11-06 22:03:01.431 
+Finished performing 4640 data-to-text generations
+INFO: 2020-11-06 22:03:08.405 
+Finished performing 4800 data-to-text generations
+INFO: 2020-11-06 22:03:14.545 
+Finished performing 4960 data-to-text generations
+INFO: 2020-11-06 22:03:23.391 
+Finished performing 5120 data-to-text generations
+INFO: 2020-11-06 22:03:32.752 
+Finished performing 5280 data-to-text generations
+INFO: 2020-11-06 22:03:41.808 
+Finished performing 5440 data-to-text generations
+INFO: 2020-11-06 22:03:49.784 
+Finished performing 5600 data-to-text generations
+INFO: 2020-11-06 22:03:56.620 
+Finished performing 5760 data-to-text generations
+INFO: 2020-11-06 22:04:02.658 
+Finished performing 5920 data-to-text generations
+INFO: 2020-11-06 22:04:08.863 
+Finished performing 6080 data-to-text generations
+INFO: 2020-11-06 22:04:17.869 
+Finished performing 6240 data-to-text generations
+INFO: 2020-11-06 22:04:25.386 
+Finished performing 6400 data-to-text generations
+INFO: 2020-11-06 22:04:31.377 
+Finished performing 6560 data-to-text generations
+INFO: 2020-11-06 22:04:41.361 
+Finished performing 6720 data-to-text generations
+INFO: 2020-11-06 22:04:48.636 
+Finished performing 6880 data-to-text generations
+INFO: 2020-11-06 22:04:53.213 
+Writing predictions to -> models/t5_v1/pred/test.txt
+INFO: 2020-11-06 22:05:00.304 
+Finished performing 160 data-to-text generations
+INFO: 2020-11-06 22:05:07.438 
+Finished performing 320 data-to-text generations
+INFO: 2020-11-06 22:05:14.519 
+Finished performing 480 data-to-text generations
+INFO: 2020-11-06 22:05:19.693 
+Finished performing 640 data-to-text generations
+INFO: 2020-11-06 22:05:23.978 
+Finished performing 800 data-to-text generations
+INFO: 2020-11-06 22:05:28.793 
+Finished performing 960 data-to-text generations
+INFO: 2020-11-06 22:05:34.778 
+Finished performing 1120 data-to-text generations
+INFO: 2020-11-06 22:05:42.173 
+Finished performing 1280 data-to-text generations
+INFO: 2020-11-06 22:05:49.861 
+Finished performing 1440 data-to-text generations
+INFO: 2020-11-06 22:05:59.132 
+Finished performing 1600 data-to-text generations
+INFO: 2020-11-06 22:06:10.284 
+Finished performing 1760 data-to-text generations
+INFO: 2020-11-06 22:06:21.884 
+Finished performing 1920 data-to-text generations
+INFO: 2020-11-06 22:06:32.706 
+Finished performing 2080 data-to-text generations
+INFO: 2020-11-06 22:06:45.436 
+Finished performing 2240 data-to-text generations
+INFO: 2020-11-06 22:06:56.593 
+Finished performing 2400 data-to-text generations
+INFO: 2020-11-06 22:07:08.756 
+Finished performing 2560 data-to-text generations
+INFO: 2020-11-06 22:07:23.623 
+Finished performing 2720 data-to-text generations
+INFO: 2020-11-06 22:07:37.098 
+Finished performing 2880 data-to-text generations
+INFO: 2020-11-06 22:07:45.824 
+Finished performing 3040 data-to-text generations
+INFO: 2020-11-06 22:07:51.637 
+Finished performing 3200 data-to-text generations
+INFO: 2020-11-06 22:07:56.775 
+Finished performing 3360 data-to-text generations
+INFO: 2020-11-06 22:08:02.476 
+Finished performing 3520 data-to-text generations
+INFO: 2020-11-06 22:08:09.934 
+Finished performing 3680 data-to-text generations
+INFO: 2020-11-06 22:08:17.100 
+Finished performing 3840 data-to-text generations
+INFO: 2020-11-06 22:08:24.159 
+Finished performing 4000 data-to-text generations
+INFO: 2020-11-06 22:08:35.004 
+Finished performing 4160 data-to-text generations
+INFO: 2020-11-06 22:08:44.143 
+Finished performing 4320 data-to-text generations
+INFO: 2020-11-06 22:08:52.558 
+Finished performing 4480 data-to-text generations
+INFO: 2020-11-06 22:09:09.268 
+Finished performing 4640 data-to-text generations
+INFO: 2020-11-06 22:09:21.009 
+Finished performing 4800 data-to-text generations
+INFO: 2020-11-06 22:09:34.156 
+Finished performing 4960 data-to-text generations
+INFO: 2020-11-06 22:09:46.334 
+Finished performing 5120 data-to-text generations
+INFO: 2020-11-06 22:10:00.323 
+Finished performing 5280 data-to-text generations
+INFO: 2020-11-06 22:10:16.677 
+Finished performing 5440 data-to-text generations
+INFO: 2020-11-06 22:10:22.355 
+Finished performing 5600 data-to-text generations
+INFO: 2020-11-06 22:10:27.390 
+Finished performing 5760 data-to-text generations
+INFO: 2020-11-06 22:10:33.050 
+Finished performing 5920 data-to-text generations
+INFO: 2020-11-06 22:10:40.007 
+Finished performing 6080 data-to-text generations
+INFO: 2020-11-06 22:10:47.359 
+Finished performing 6240 data-to-text generations
+INFO: 2020-11-06 22:10:54.554 
+Finished performing 6400 data-to-text generations
+INFO: 2020-11-06 22:11:04.132 
+Finished performing 6560 data-to-text generations
+INFO: 2020-11-06 22:11:14.431 
+Finished performing 6720 data-to-text generations
+INFO: 2020-11-06 22:11:24.247 
+Finished performing 6880 data-to-text generations
+INFO: 2020-11-06 22:11:34.429 
+Finished performing 7040 data-to-text generations
+INFO: 2020-11-06 22:11:45.429 
+Finished performing 7200 data-to-text generations
+INFO: 2020-11-06 22:12:01.108 
+Finished performing 7360 data-to-text generations
+INFO: 2020-11-06 22:12:13.675 
+Finished performing 7520 data-to-text generations
+INFO: 2020-11-06 22:12:28.261 
+Finished performing 7680 data-to-text generations
+INFO: 2020-11-06 22:12:42.046 
+Finished performing 7840 data-to-text generations
+INFO: 2020-11-06 22:12:49.492 
+Finished performing 8000 data-to-text generations
+INFO: 2020-11-06 22:12:55.683 
+Finished performing 8160 data-to-text generations
+INFO: 2020-11-06 22:13:02.100 
+Finished performing 8320 data-to-text generations
+INFO: 2020-11-06 22:13:08.872 
+Finished performing 8480 data-to-text generations
+INFO: 2020-11-06 22:13:15.276 
+Finished performing 8640 data-to-text generations
+INFO: 2020-11-06 22:13:21.846 
+Finished performing 8800 data-to-text generations
+INFO: 2020-11-06 22:13:29.127 
+Finished performing 8960 data-to-text generations
+INFO: 2020-11-06 22:13:37.190 
+Finished performing 9120 data-to-text generations
+INFO: 2020-11-06 22:13:50.514 
+Finished performing 9280 data-to-text generations
+INFO: 2020-11-06 22:13:58.775 
+Finished performing 9440 data-to-text generations
+INFO: 2020-11-06 22:14:07.303 
+Finished performing 9600 data-to-text generations
+INFO: 2020-11-06 22:14:15.610 
+Finished performing 9760 data-to-text generations
+INFO: 2020-11-06 22:14:23.141 
+Finished performing 9920 data-to-text generations
+INFO: 2020-11-06 22:14:31.662 
+Finished performing 10080 data-to-text generations
+INFO: 2020-11-06 22:14:41.821 
+Finished performing 10240 data-to-text generations
+INFO: 2020-11-06 22:14:49.947 
+Finished performing 10400 data-to-text generations
+INFO: 2020-11-06 22:14:58.361 
+Finished performing 10560 data-to-text generations
+INFO: 2020-11-06 22:15:06.314 
+Finished performing 10720 data-to-text generations
+INFO: 2020-11-06 22:15:14.605 
+Finished performing 10880 data-to-text generations
+INFO: 2020-11-06 22:15:23.675 
+Finished performing 11040 data-to-text generations
+INFO: 2020-11-06 22:15:32.922 
+Finished performing 11200 data-to-text generations
+INFO: 2020-11-06 22:15:43.815 
+Finished performing 11360 data-to-text generations
+INFO: 2020-11-06 22:15:54.082 
+Finished performing 11520 data-to-text generations
+INFO: 2020-11-06 22:16:03.412 
+Finished performing 11680 data-to-text generations
+INFO: 2020-11-06 22:16:12.225 
+Finished performing 11840 data-to-text generations
+INFO: 2020-11-06 22:16:20.227 
+Finished performing 12000 data-to-text generations
+INFO: 2020-11-06 22:16:28.665 
+Finished performing 12160 data-to-text generations
+INFO: 2020-11-06 22:16:36.675 
+Finished performing 12320 data-to-text generations
+INFO: 2020-11-06 22:16:42.828 
+Finished performing 12480 data-to-text generations
+INFO: 2020-11-06 22:16:45.167 
+The Data-to-Text Model for training and generation took -> 133.56143674055735 minutes
